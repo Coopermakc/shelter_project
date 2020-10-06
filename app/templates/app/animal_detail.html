@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'detail.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container detail">
+    <img src="{{ object.avatar.url }}">
+    <p> Кличка - {{ object.name }}</p>
+    <p> Возраст - {{ object.age }}</p>
+    <p> Описание - {{ object.description }}</p>
+</div>
+{% endblock %}

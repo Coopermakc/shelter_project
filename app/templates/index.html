@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Добро пожаловать в приют {{ title }}</h1>
+        <div class="row items">
+        {% for animal in animals %}
+            <div class="col col-4">
+            <a href="{{ animal.id }}" class="item">
+                <img src='{{ animal.avatar.url }}'>
+                <p>{{ animal }}</p>
+            </a>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+{% endblock %}

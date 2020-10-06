@@ -1,0 +1,9 @@
+body {
+    background-color: darkgrey;
+}
+
+.small-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}

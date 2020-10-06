@@ -1,0 +1,12 @@
+2020-09-23 16:54:48.484 MSK [11057] FATAL:  lock file "postmaster.pid" already exists
+2020-09-23 16:54:48.484 MSK [11057] HINT:  Is another postmaster (PID 11045) running in data directory "/usr/local/var/postgres"?
+2020-09-23 16:56:35.294 MSK [11121] LOG:  starting PostgreSQL 12.4 on x86_64-apple-darwin17.7.0, compiled by Apple LLVM version 10.0.0 (clang-1000.11.45.5), 64-bit
+2020-09-23 16:56:35.297 MSK [11121] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2020-09-23 16:56:35.297 MSK [11121] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2020-09-23 16:56:35.297 MSK [11121] LOG:  could not bind IPv6 address "::1": Address already in use
+2020-09-23 16:56:35.297 MSK [11121] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2020-09-23 16:56:35.297 MSK [11121] WARNING:  could not create listen socket for "localhost"
+2020-09-23 16:56:35.297 MSK [11121] FATAL:  could not create any TCP/IP sockets
+2020-09-23 16:56:35.297 MSK [11121] LOG:  database system is shut down
+2020-09-23 16:57:09.264 MSK [11166] FATAL:  lock file "postmaster.pid" already exists
+2020-09-23 16:57:09.264 MSK [11166] HINT:  Is another postmaster (PID 11150) running in data directory "/usr/local/var/postgres"?
