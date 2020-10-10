@@ -12,4 +12,7 @@ urlpatterns = [
     path('dogs/', DogListView.as_view(), name='app/templates/animals_list'),
     path('parrots/', ParrotListView.as_view(), name='app/templates/animals_list'),
     path('about_us/', about_us, name='app/templates/about_us'),
+    path('parrots/<int:pk>/', AnimalDetailView.as_view(), name='app/templates/animal-detail'),
+    path('cats/<int:pk>/', AnimalDetailView.as_view(), name='app/templates/animal-detail'),
+    path('dogs/<int:pk>/', AnimalDetailView.as_view(), name='app/templates/animal-detail'),
 ]

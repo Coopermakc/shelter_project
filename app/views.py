@@ -3,6 +3,7 @@ from django.template import loader
 from django.http import HttpResponse
 from app.models import Animal
 from django.views.generic import DetailView, ListView
+import random
 
 # Create your views here.
 
@@ -47,9 +48,12 @@ class AnimalListView(ListView):
 
 def index(request):
     template = loader.get_template('index.html')
-    dog = Animal.objects.filter(kind = 'D').first
-    cat = Animal.objects.filter(kind = 'C').first
-    parrot = Animal.objects.filter(kind = 'P').first
+    dogs = Animal.objects.filter(kind = 'D')
+    cats = Animal.objects.filter(kind = 'C')
+    parrots = Animal.objects.filter(kind = 'P')
+    dog = random.choice(dogs)
+    cat = random.choice(cats)
+    parrot = random.choice(parrots)
     animals = [cat,dog,parrot]
     data = {
         'title': 'ХэппиПэт',

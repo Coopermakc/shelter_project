@@ -22,18 +22,18 @@
         <tbody>
         {% for animal in animals_list %}
             <tr>
-                <td>{{ forloop.counter }}</td>
-                <td>{{ animal.name }}</td>
-                <td>{{ animal.age }}</td>
-                <td>{{ animal.description }}</td>
-                <td>{{ animal.get_character_display }}</td>
-                <td>
-                    {% if animal.avatar %}
-                        <img src="{{ animal.avatar.url }}" alt="Avatar" class="icon">
-                     {% else %}
-                        <p>:)</p>
-                    {% endif %}
-                </td>
+                    <td>{{ forloop.counter }}</td>
+                    <td><a href= '/{{ animal.get_kind_display }}/{{ animal.id }}/'>{{ animal.name }}</a></td>
+                    <td>{{ animal.age }}</td>
+                    <td>{{ animal.description }}</td>
+                    <td>{{ animal.get_character_display }}</td>
+                    <td>
+                        {% if animal.avatar %}
+                            <img src="{{ animal.avatar.url }}" alt="Avatar" class="icon">
+                        {% else %}
+                            <p>:)</p>
+                        {% endif %}
+                    </td>
             </tr>
         </tbody>
         {% endfor %} 

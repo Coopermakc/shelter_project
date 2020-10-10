@@ -3,9 +3,9 @@ from django.db import models
 # Create your models here.
 class Animal(models.Model):
     KIND_OF_ANIMAL = [
-        ('D', 'собака'),
-        ('C', 'кошка'),
-        ('P', 'попугай')
+        ('D', 'dogs'),
+        ('C', 'cats'),
+        ('P', 'parrots')
     ]
     KIND_OF_CHARACTER = [
         ('A', 'активный'),
