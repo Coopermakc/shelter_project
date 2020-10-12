@@ -21,3 +21,8 @@
 Создание объектов выполняется через админку
 
 Учетные данные для админки user_a/12qw!@QW
+
+
+Ссылка на heroku
+
+    https://obscure-wildwood-64971.herokuapp.com
